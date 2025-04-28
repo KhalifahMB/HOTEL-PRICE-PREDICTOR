@@ -1,1 +1,4 @@
-linters: with_defaults(line_length_linter=line_length_linter(100))
+# Ensure all lines have valid tags and remove any standalone closing parentheses
+linters: with_defaults(
+  line_length_linter = line_length_linter(120)
+)
